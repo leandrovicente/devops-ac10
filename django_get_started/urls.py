@@ -15,6 +15,7 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'app.views.home', name='home'),
     url(r'^contact$', 'app.views.contact', name='contact'),
+    url(r'^cadastro_vestibulares', 'app.views.cadastro_vestibulares’, name='cadastro_vestibulares'),
     url(r'^about', 'app.views.about', name='about'),
     url(r'^cadastro_cursos', 'app.views.cadastro_cursos', name='cadastro_cursos'),
     url(r'^login/$',
@@ -35,7 +36,7 @@ urlpatterns = patterns('',
             'next_page': '/',
         },
         name='logout'),
-
+    
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
